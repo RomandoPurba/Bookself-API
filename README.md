@@ -1,7 +1,7 @@
 # Bookself-API
 
 ### POST
-- URL = /books
+- URL = <b>/books</b>
 - Body Request =>
     - name = string,
     - year = number,
@@ -14,15 +14,27 @@
     
 
 ### GET
-- URL = /books
+- URL = <b>/books</b>
 - Response Body =>
   - id
   - name
   - publisher
-  
-  
-  
-- URL = /books/{id buku}
+ 
+- URL = <b>/books?name={name book}</b>
+- Response Body =>
+  - Menampilkan semua buku yang mengandung nama yang anda cari secara <i>non case sensitive</i>
+
+- URL = <b>/books?reading={value}</b>
+- Response Body =>
+  - value = 1 => Menampilkan buku yang sudah dibaca
+  - value = 0 => menampilkan buku yg belum dibaca
+
+- URL = <b>/books?finished={value}</b>
+- Response Body =>
+  - value = 1 => Menampilkan buku yang sudah selesai dibaca
+  - value = 0 => menampilkan buku yg belum selesai dibaca
+
+- URL = <b>/books/{id buku}</b>
 - Body Response =>
   - id
   - name
@@ -38,7 +50,7 @@
   - updatedAt
   
 ### PUT
-- URL = /books/{id books}
+- URL = <b>/books/{id books}</b>
 - Body Request =>
    - name = string,
    - year = number,
@@ -50,4 +62,4 @@
    - reading = boolean
 
 ### DELETE
-- URL = /books/{id books}
+- URL = <b>/books/{id books}</b>
