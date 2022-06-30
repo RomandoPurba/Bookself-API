@@ -1,0 +1,21 @@
+{
+  "name": "boolself-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon src/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/hapi": "^20.2.2",
+    "nanoid": "^3.1.22"
+  },
+  "devDependencies": {
+    "eslint": "^8.18.0",
+    "eslint-config-xo": "^0.41.0",
+    "nodemon": "^2.0.16"
+  }
+}
